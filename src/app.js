@@ -20,14 +20,17 @@ window.onload = function() {
       "right on time",
       "when I finished",
       "during my lunch",
-      "while I was praying"
+      "while I was praying",
     ];
 
-    let excuseString = `${who[Math.floor(Math.random() * who.length)]} ${
-      action[Math.floor(Math.random() * action.length)]
-    } ${what[Math.floor(Math.random() * what.length)]} ${
-      when[Math.floor(Math.random() * when.length)]
-    }`;
+    let excuseString =
+      who[Math.floor(Math.random() * who.length)] +
+      " " +
+      action[Math.floor(Math.random() * action.length)] +
+      " " +
+      what[Math.floor(Math.random() * what.length)] +
+      " " +
+      when[Math.floor(Math.random() * when.length)];
 
     console.log(excuseString);
   }
