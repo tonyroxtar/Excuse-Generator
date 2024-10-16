@@ -12,15 +12,15 @@ window.onload = function() {
   // Math.ceil
 
   function excuse() {
-    let who = ["The dog", "My grandma", "His turtle", "My bird"];
-    let action = ["ate", "peed", "crushed", "broke"];
-    let what = ["my homework", "the keys", "the car", "the laptop"];
+    let who = ["El perro", "Mi abuela", "La gata", "El trauko", "Un veneko"];
+    let action = ["se comió", "meó", "destrozó", "quemó", "violó"];
+    let what = ["mi tarea", "el auto", "la pc", "la casa", "tu hermana"];
     let when = [
-      "before the class",
-      "right on time",
-      "when I finished",
-      "during my lunch",
-      "while I was praying",
+      "antes de clases",
+      "al final del trabajo",
+      "cuando estaba terminando",
+      "durante el almuerzo",
+      "mientras cagaba"
     ];
 
     let excuseString =
@@ -33,6 +33,8 @@ window.onload = function() {
       when[Math.floor(Math.random() * when.length)];
 
     console.log(excuseString);
+
+    document.getElementById("excuse").innerHTML = excuseString;
   }
   excuse();
 };
